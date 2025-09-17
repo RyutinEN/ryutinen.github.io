@@ -94,11 +94,11 @@ function loop() {
   }
 
   // Рисуем яблоко
-  context.fillStyle = 'red';
+  context.fillStyle = 'yellow';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // Рисуем змею
-  context.fillStyle = 'grey';
+  context.fillStyle = 'green';
   snake.cells.forEach(function(cell, index) {
     context.fillRect(cell.x, cell.y, grid-1, grid-1);
 
@@ -150,6 +150,7 @@ requestAnimationFrame(loop);
 </body>
 
 </html>
+
 
 
 
